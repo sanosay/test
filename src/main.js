@@ -7,4 +7,9 @@
 			fn.call(this.array[i],i,this.array);
 		}
 	};
+	Me.ForEach = function(array,fn){
+		for(var i=0;i<array.length;i++){
+			fn.call(array[i],array[i],i,array);
+		}
+	};
 })(window);

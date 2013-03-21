@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="../src/main.js"></script>
+		<script>
+			window.onload = function(){
+				Me.ForEach([3,2,1,5],function(value,index,array){
+					var elem = document.getElementById('container');
+					var node=document.createElement('li');
+					var textnode=document.createTextNode('['+index+'] => '+value);
+					node.appendChild(textnode);
+					elem.appendChild(node);
+				});
+			};
+		</script>
+	</head>
+	<body>
+		<p>Elements : </p>
+		<hr/>
+		<ul id="container"></ul>
+	</body>
+</html>
